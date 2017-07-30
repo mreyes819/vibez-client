@@ -1,14 +1,21 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-contact',
   templateUrl: 'contact.html'
 })
 export class ContactPage {
-
-  constructor(public navCtrl: NavController) {
-
+  structure: any = { lower: 18, upper: 99 };
+  myDate: any = 22;
+  openGallery (): void {
+    let options = {
+      maximumImagesCount: 1,
+      quality: 75
+    };
   }
-
+  images: any = [
+    {
+      id: 1,
+      image: ""
+    }
+  ]
 }

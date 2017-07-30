@@ -1,3 +1,29 @@
-page-contact {
+.image-box {
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative; /* If you want text inside of it */
+  border: #bdbdbd 1px solid;
+  border-radius: 9px;
+  background-color: #f7f7f0;
 
+  * {
+    color: #8b8b8b;
+  }
+
+  ion-icon {
+    font-size: 10vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:active {
+    background-color: #e4e4de !important;
+  }
+}
+
+.delete {
+  margin: 10px auto;
+  display: block;
 }
